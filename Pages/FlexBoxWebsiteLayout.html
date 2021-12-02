@@ -1,0 +1,113 @@
+<html lang="en">
+    <body>
+        <div class="container">
+            <nav class="navigationBar">
+                <h1>Navigation Bar</h1>
+            </nav>
+            <div class="subContainer">
+                <header class="headerContainer">
+                    <h1>Flexbox Website Layout</h1>
+                </header>
+                <div class="mainContainer">
+                    <section class="mainContentItem">
+                        <article class="article">
+                            <h2>Article 1</h2>
+                            <p> Is he the reincarnation of a Pill Sovereign? 
+                                Or is he a fusion of spirits? 
+                                A youth whose Spirit Root, Spirit Blood, and Spirit Bone were all stolen - 
+                                Long Chen must rely on his memories of divine pill refining arts and a mysterious cultivation technique, 
+                                the Nine Star Hegemon Body Art, in order to part the layers of misleading fog and solve a heaven-shaking riddle.
+
+                                Heaven and earth are within his grasp as he steps through the cosmos and suppresses devils, demons, and gods.
+                                
+                                Legend has it that when Long Chen arrives, the lands roar and heaven screams, ghosts sob and gods weep.</p>
+                        </article>
+                    </section>
+                    <sideBar class="sideBarItem sideBarRightItem">
+                        <div class="center">
+                            <p>Right Side Bar</p>
+                        </div>
+                    </sideBar>
+                </div>
+                <footer class="footerContainer">Footer</footer>
+            </div>
+        </div>
+    </body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <style>
+            body {
+                padding: 2em;
+            }
+
+            .headerContainer {
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: tomato;
+                font-weight: bold;
+                padding: 10px;
+            }
+
+            .footerContainer {
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: lightgreen;
+                font-weight: bold;
+                padding: 10px;
+            }
+
+            .mainContainer {
+                display: flex;
+                flex-flow: row wrap;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .article {
+                padding: 10px;
+                margin: 10px;
+                background: aqua;
+            }
+
+            .sideBarRightItem {
+                background: hotpink;
+                order: 2;
+            }
+
+            .sideBarItem {
+                flex: 1 0 0;
+                border: 0 solid green;
+            }
+
+            .mainContentItem {
+                text-align: left;
+                background: deepskyblue;
+                flex: 3 0px;
+                order: 1;
+            }
+
+            .container {
+                display: flex;
+                flex-flow: row wrap;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .navigationBar {
+                background: gold;
+                width: 20%;
+                order: 1;
+                padding: 10px;
+            }
+
+            .subContainer {
+                flex: 1 0;
+                order: 2;
+            }
+        </style>
+    </head>
+
+    
